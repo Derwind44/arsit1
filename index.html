@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nama Studio | Arsitektur &amp; Desain Interior</title>
+  <meta name="description" content="Studio arsitektur dan desain interior. Jelajahi karya kami lewat model 3D, denah interaktif, dan maket.">
+  <meta name="theme-color" content="#ece7df">
+  <meta property="og:title" content="Nama Studio | Arsitektur & Desain Interior">
+  <meta property="og:description" content="Masuk ke ruang yang kami rancang: model 3D, denah interaktif, dan maket.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#studio">Langsung ke konten</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Nama Studio, ke awal halaman">Nama Studio</a>
+    <nav class="site-nav" id="site-nav" aria-label="Utama">
+      <a href="#karya">Karya</a>
+      <a href="#maket">Maket</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <a class="btn btn--small site-header__cta" href="#kontak">Konsultasi</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="Intro: dari maket masuk ke interior">
+      <div class="hero__pin">
+        <div class="hero__stage" data-state="loading" role="img" aria-label="Maket 3D rumah. Saat digulir, kamera mendekat, pintu terbuka, lalu masuk ke ruang keluarga."></div>
+
+        <div class="hero__copy" data-phase="-1 0 0.05 0.14">
+          <p class="eyebrow">Arsitektur &amp; Desain Interior</p>
+          <h1 class="display">Ruang yang tumbuh dari <em>cara hidupmu.</em></h1>
+          <p class="lede">Kami merancang rumah, interior, dan ruang usaha dari sketsa pertama sampai serah terima kunci.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#karya">Lihat karya</a>
+            <a class="btn btn--ghost" href="#kontak">Mulai konsultasi</a>
+          </div>
+        </div>
+
+        <div class="hero__cap" data-phase="0.14 0.2 0.3 0.35">
+          <p class="kicker">01 · Fasad</p>
+          <p class="hero__line">Setiap fasad kami rancang dari arah datangnya cahaya.</p>
+        </div>
+        <div class="hero__cap" data-phase="0.37 0.41 0.5 0.55">
+          <p class="kicker">02 · Ambang</p>
+          <p class="hero__line">Ruang yang baik dimulai di ambang pintu.</p>
+        </div>
+        <div class="hero__cap hero__cap--end" data-phase="0.66 0.74 2 3">
+          <p class="kicker">03 · Interior</p>
+          <h2 class="hero__title">Selamat datang di dalam.</h2>
+          <a class="btn btn--light" href="#karya">Lihat karya interior</a>
+        </div>
+        <ul class="hero__spots" data-phase="0.74 0.82 2 3" aria-label="Detail material"></ul>
+
+        <nav class="hero__rail" aria-label="Babak intro">
+          <span class="hero__bar" aria-hidden="true"></span>
+          <button type="button" data-go="0">Maket</button>
+          <button type="button" data-go="0.25">Fasad</button>
+          <button type="button" data-go="0.46">Pintu</button>
+          <button type="button" data-go="0.9">Interior</button>
+        </nav>
+        <a class="hero__skip" href="#studio" data-phase="-1 0 0.92 0.98">Lewati intro</a>
+        <p class="hero__hint" data-phase="-1 0 0.03 0.08" aria-hidden="true"><span></span>Gulir untuk masuk</p>
+      </div>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="container studio__grid">
+        <p class="eyebrow reveal">Tentang studio</p>
+        <h2 class="section-title reveal" id="studio-title">Kami merancang dari dalam ke luar. Cara Anda hidup menentukan bentuk ruangnya.</h2>
+        <div class="studio__text reveal">
+          <p>Setiap proyek dimulai dari percakapan tentang kebiasaan pagi, cara keluarga berkumpul, dan ke mana cahaya jatuh. Dari sana kami menyusun denah, membuat maket, lalu memilih material yang menua dengan baik.</p>
+          <p>Anda bisa melihat semua itu sebelum dibangun: setiap karya di bawah punya model 3D dan denah yang bisa dijelajahi.</p>
+        </div>
+        <dl class="stats reveal">
+          <div><dt>Proyek selesai</dt><dd>64</dd></div>
+          <div><dt>Tahun berkarya</dt><dd>9</dd></div>
+          <div><dt>Kota</dt><dd>12</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="projects" id="karya" aria-labelledby="karya-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Karya interior</p>
+            <h2 class="section-title reveal" id="karya-title">Jelajahi ruangnya, bukan hanya fotonya.</h2>
+          </div>
+          <p class="section-head__note reveal">Buka proyek untuk memutar model 3D, beralih antara maket dan material, lalu klik ruang di denah.</p>
+        </div>
+        <div class="projects__filters" role="group" aria-label="Saring proyek"></div>
+        <p class="projects__status visually-hidden" aria-live="polite"></p>
+        <div class="projects__grid"></div>
+        <noscript><p class="section-head__note">Aktifkan JavaScript untuk menjelajahi model 3D dan denah setiap proyek.</p></noscript>
+      </div>
+    </section>
+
+    <section class="maket" id="maket" aria-labelledby="maket-title">
+      <div class="container maket__grid">
+        <div class="maket__copy">
+          <p class="eyebrow reveal">Maket</p>
+          <h2 class="section-title reveal" id="maket-title">Maket membuat keputusan jadi nyata.</h2>
+          <p class="reveal">Sebelum konstruksi, kami membuat maket fisik dan digital untuk menguji massa bangunan, bayangan, dan hubungan antarlantai. Urai maket di samping untuk melihat lantai dasarnya.</p>
+          <div class="maket__controls reveal">
+            <label class="range" for="urai">
+              <span class="range__label">Urai lantai</span>
+              <input type="range" id="urai" min="0" max="100" value="0" aria-valuetext="Maket utuh">
+              <span class="range__ends" aria-hidden="true"><span>Utuh</span><span>Terurai</span></span>
+            </label>
+            <div class="seg" role="group" aria-label="Tampilan maket">
+              <button type="button" data-maket-mode="maket" aria-pressed="true">Maket putih</button>
+              <button type="button" data-maket-mode="material" aria-pressed="false">Material</button>
+            </div>
+          </div>
+        </div>
+        <div class="maket__stage" data-state="loading">
+          <ul class="maket__tags" aria-hidden="true"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="layanan" aria-labelledby="layanan-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Layanan</p>
+            <h2 class="section-title reveal" id="layanan-title">Satu tim dari denah sampai detail terakhir.</h2>
+          </div>
+        </div>
+        <ul class="services__list">
+          <li class="service reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 42h36M10 42V18l14-10 14 10v24M20 42V30h8v12"/></svg>
+            <h3>Arsitektur</h3>
+            <p>Rumah tinggal dan bangunan kecil, dari studi tapak, perizinan, sampai gambar kerja.</p>
+          </li>
+          <li class="service reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 34h36M10 34v-8a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v8M14 22v-6h20v6M12 34v6M36 34v6"/></svg>
+            <h3>Desain interior</h3>
+            <p>Tata ruang, furnitur custom, pencahayaan, dan pemilihan material untuk hunian maupun usaha.</p>
+          </li>
+          <li class="service reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38l16 6 16-6V16L24 10 8 16zM8 16l16 6 16-6M24 22v22"/></svg>
+            <h3>Maket &amp; 3D</h3>
+            <p>Maket fisik, model 3D interaktif, dan denah yang bisa Anda jelajahi sebelum membangun.</p>
+          </li>
+          <li class="service reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40h32M12 40V12h24v28M18 18h4M26 18h4M18 25h4M26 25h4M18 32h4M26 32h4"/></svg>
+            <h3>Pendampingan konstruksi</h3>
+            <p>Pengawasan berkala, rapat dengan kontraktor, dan kontrol kualitas sampai serah terima.</p>
+          </li>
+        </ul>
+        <ol class="process">
+          <li class="reveal"><span>01</span><h3>Konsultasi</h3><p>Kebutuhan, anggaran, dan jadwal.</p></li>
+          <li class="reveal"><span>02</span><h3>Konsep &amp; denah</h3><p>Dua sampai tiga alternatif tata ruang.</p></li>
+          <li class="reveal"><span>03</span><h3>Maket &amp; 3D</h3><p>Model untuk menguji ruang dan cahaya.</p></li>
+          <li class="reveal"><span>04</span><h3>Detail &amp; RAB</h3><p>Gambar kerja dan rencana biaya.</p></li>
+          <li class="reveal"><span>05</span><h3>Konstruksi</h3><p>Pendampingan sampai serah terima.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak" aria-labelledby="kontak-title">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow reveal">Kontak</p>
+          <h2 class="section-title reveal" id="kontak-title">Ceritakan ruang yang Anda bayangkan.</h2>
+          <p class="reveal">Isi singkat di samping, lalu lanjutkan percakapan di WhatsApp. Konsultasi awal 30 menit tanpa biaya.</p>
+          <ul class="contact__list reveal">
+            <li><span>Email</span><a href="mailto:halo@namastudio.id">halo@namastudio.id</a></li>
+            <li><span>Instagram</span><a href="https://instagram.com/" rel="noopener" target="_blank">@namastudio</a></li>
+            <li><span>Studio</span>Jl. Contoh No. 12, Bandung</li>
+          </ul>
+        </div>
+        <form class="form reveal" id="form-konsultasi" novalidate>
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input id="nama" name="nama" autocomplete="name" required aria-describedby="err-nama">
+            <p class="field__error" id="err-nama"></p>
+          </div>
+          <fieldset class="field" aria-describedby="err-jenis">
+            <legend>Jenis proyek</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="jenis" value="Rumah"> Rumah</label>
+              <label class="chip"><input type="radio" name="jenis" value="Apartemen"> Apartemen</label>
+              <label class="chip"><input type="radio" name="jenis" value="Komersial"> Komersial</label>
+              <label class="chip"><input type="radio" name="jenis" value="Lainnya"> Lainnya</label>
+            </div>
+            <p class="field__error" id="err-jenis"></p>
+          </fieldset>
+          <div class="field-row">
+            <div class="field">
+              <label for="luas">Perkiraan luas (m²)</label>
+              <input id="luas" name="luas" type="number" inputmode="numeric" min="1">
+            </div>
+            <div class="field">
+              <label for="lokasi">Lokasi</label>
+              <input id="lokasi" name="lokasi" autocomplete="address-level2">
+            </div>
+          </div>
+          <div class="field">
+            <label for="anggaran">Anggaran</label>
+            <select id="anggaran" name="anggaran">
+              <option value="">Belum tahu</option>
+              <option>Di bawah Rp150 juta</option>
+              <option>Rp150–500 juta</option>
+              <option>Rp500 juta–1 miliar</option>
+              <option>Di atas Rp1 miliar</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pesan">Cerita singkat</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Misalnya: rumah dua lantai untuk keluarga dengan dua anak"></textarea>
+          </div>
+          <button class="btn btn--block" type="submit">Lanjutkan di WhatsApp</button>
+          <p class="form__status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="brand">Nama Studio</p>
+      <p>Arsitektur &amp; desain interior · Bandung, Indonesia</p>
+      <p><a href="#top">Kembali ke atas</a></p>
+    </div>
+  </footer>
+
+  <dialog class="pd" id="project-dialog" aria-labelledby="pd-title">
+    <div class="pd__bar">
+      <div class="pd__heading">
+        <p class="pd__meta" id="pd-meta"></p>
+        <h2 class="pd__title" id="pd-title"></h2>
+      </div>
+      <div class="pd__actions">
+        <button class="icon-btn" type="button" data-pd="prev" aria-label="Proyek sebelumnya"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="icon-btn" type="button" data-pd="next" aria-label="Proyek berikutnya"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        <button class="icon-btn" type="button" data-pd="close" aria-label="Tutup proyek"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+    </div>
+    <div class="pd__tabs" role="tablist" aria-label="Tampilan proyek">
+      <button type="button" role="tab" id="pd-tab-3d" data-tab="3d" aria-controls="pd-3d" aria-selected="true">3D</button>
+      <button type="button" role="tab" id="pd-tab-plan" data-tab="plan" aria-controls="pd-plan" aria-selected="false" tabindex="-1">Denah</button>
+      <button type="button" role="tab" id="pd-tab-info" data-tab="info" aria-controls="pd-info" aria-selected="false" tabindex="-1">Info</button>
+    </div>
+    <div class="pd__body">
+      <section class="pd__view" id="pd-3d" aria-label="Model 3D">
+        <div class="pd__canvas" data-state="loading"></div>
+        <div class="pd__toolbar" role="toolbar" aria-label="Kontrol model 3D">
+          <div class="seg" role="group" aria-label="Tampilan">
+            <button type="button" data-mode="material" aria-pressed="true">Material</button>
+            <button type="button" data-mode="maket" aria-pressed="false">Maket</button>
+          </div>
+          <div class="seg" role="group" aria-label="Dinding">
+            <button type="button" data-walls="cut" aria-pressed="true">Potong</button>
+            <button type="button" data-walls="full" aria-pressed="false">Penuh</button>
+          </div>
+          <div class="seg" role="group" aria-label="Waktu">
+            <button type="button" data-time="day" aria-pressed="true">Siang</button>
+            <button type="button" data-time="night" aria-pressed="false">Malam</button>
+          </div>
+          <div class="seg">
+            <button type="button" data-view="top">Atas</button>
+            <button type="button" data-view="reset">Reset</button>
+          </div>
+        </div>
+        <p class="pd__hint">Seret untuk memutar · scroll atau cubit untuk zoom · klik ruang untuk fokus</p>
+      </section>
+      <div class="pd__scroll">
+        <section class="pd__plan" id="pd-plan" aria-label="Denah">
+          <div class="pd__plan-head">
+            <h3>Denah</h3>
+            <p>Arahkan atau pilih ruang</p>
+          </div>
+          <div class="pd__plan-svg"></div>
+          <div class="pd__room" aria-live="polite"></div>
+        </section>
+        <section class="pd__info" id="pd-info" aria-label="Tentang proyek">
+          <div class="pd__info-body"></div>
+        </section>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
