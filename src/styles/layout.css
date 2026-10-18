@@ -425,7 +425,7 @@
   position: relative;
   aspect-ratio: 1;
   min-height: 320px;
-  touch-action: pan-y;
+  overscroll-behavior: contain;
 }
 
 .maket__stage canvas {

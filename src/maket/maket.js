@@ -54,13 +54,18 @@ export function initMaket(section) {
   const controls = new OrbitControls(camera, canvas);
   controls.target.set(0, 2.4, 0);
   controls.enableDamping = true;
-  controls.enableZoom = false;
   controls.enablePan = false;
+  controls.minDistance = 20;
+  controls.maxDistance = 90;
+  controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_ROTATE };
+  canvas.addEventListener('wheel', (e) => {
+    if (!e.ctrlKey) e.stopImmediatePropagation();
+  }, { capture: true });
   controls.minPolarAngle = 0.35;
   controls.maxPolarAngle = 1.3;
   controls.autoRotate = !motionQuery.matches;
   controls.autoRotateSpeed = 0.7;
-  canvas.style.touchAction = 'pan-y';
+  canvas.style.touchAction = 'none';
 
   const tags = LABELS.map((l) => {
     const li = h('li', { class: 'maket__tag', text: l.text });
