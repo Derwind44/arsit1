@@ -31,7 +31,8 @@ export function createViewer(container, plan, { onHover, onSelect, onReady } = {
   controls.minPolarAngle = 0.05;
   controls.maxPolarAngle = 1.32;
   controls.minDistance = 2.5;
-  controls.zoomToCursor = true;
+  controls.zoomToCursor = !matchMedia('(pointer: coarse)').matches;
+  controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_ROTATE };
   controls.listenToKeyEvents(canvas);
 
   const state = { walls: 'cut', mode: 'material', time: 'day', hover: null, selected: null };
@@ -82,6 +83,7 @@ export function createViewer(container, plan, { onHover, onSelect, onReady } = {
     const r = Math.max(B.w, B.d) / 2 + 1;
     controls.target.x = THREE.MathUtils.clamp(controls.target.x, -r, r);
     controls.target.z = THREE.MathUtils.clamp(controls.target.z, -r, r);
+    controls.target.y = THREE.MathUtils.clamp(controls.target.y, 0, 2.5);
     busy = controls.update() || busy;
     renderer.render(scene, camera);
     if (busy) render();
